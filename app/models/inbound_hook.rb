@@ -1,2 +1,0 @@
-class InboundHook < ApplicationRecord
-end
