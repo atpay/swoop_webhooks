@@ -1,0 +1,24 @@
+<script src="https://cdn.jsdelivr.net/npm/@swoop-password-free/swoop/dist/swoop.js" async defer></script>
+<meta name="swoop-client-id" content="swoop_44sf24l96ew7tg">
+
+<div class="swoop-button"></div>
+
+
+<br />
+<br />
+<br />
+
+%h1 Incoming Hooks: 
+%table
+  %thead
+    %tr
+      %th Hook
+      %th Payload
+  %tbody
+    - @hooks.each do |hook|
+      %tr
+        %td= hook.date_created
+        %td= hook.payload
+
+<br />
+Count: #{@hooks.count}
